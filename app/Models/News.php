@@ -56,7 +56,7 @@ class News extends Model
         }
     }
 
-      public static function boot()
+    public static function boot()
     {
       parent::boot();
       static::deleting(function($obj) {

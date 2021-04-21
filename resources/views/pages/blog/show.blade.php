@@ -1,7 +1,7 @@
 {{--
     Chemin :/resources/views/pages/blog/show.blade.php
     Description: Affiche le contenu du details d'un blog
-    Données disponible: -- // --
+    Données disponible: $new[id, titre, content, created_at, updated_at]
 --}}
 
 @extends('templates.master')
@@ -30,29 +30,18 @@ Details
     <div class="row">
         <div class="offset-1 col-5">
            <div class="h-100 position-relative">
-                <img src="{{ asset('images/2.png') }}" alt="" class="img-fluid w-100 margin-image-details">
+                <img src="{{ asset($new->image) }}" alt="image de blog" class="w-100 margin-image-details">
            </div>
         </div>
-        <div class="col-5">
+        <div class="col-6">
             <div class="h-100 card ">
                 <div class="card-body margin-text-details ">
-                        <div class="card-title fw-bold h1">Tire 1</div>
-                        <div class="card-text">je suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's content.je suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's contentje suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's content
-                            e suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's content.je suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's contentje suis le titre texteSome quick example text to build on the card title 
-                            and make up the bulk of the card's content.Some quick example text to build on the card title
-                            and make up the bulk of the card's content
+                        <div class="card-title fw-bold h1 text-capitalize">{{ $new->titre }}</div>
+                         <div class="my-1 colorBlue">Date de publication : <span
+                                    class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                         </div>
-                         <a type="button" href="{{ URL::route('page.blog.index') }}" class="btn btn-outline-ColorPrivBlue text-uppercase fw-bold  mt-3">Retour</a>
+                        <div class="card-text">{!! $new->content!!} </div>
+                         <a type="button" href="{{ URL::route('blog.index') }}" class="btn btn-outline-ColorPrivBlue text-uppercase fw-bold  mt-3">Retour</a>
                 </div>              
             </div>
         </div>

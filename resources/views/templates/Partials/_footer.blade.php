@@ -47,7 +47,7 @@
             <li class="list-unstyled"><a href="{{ URL::route('page.accueil') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Accueil</a></li>
             <li class="list-unstyled"><a href="{{ URL::route('page.soins') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Nos soins</a></li>
             <li class="list-unstyled"><a href="{{ URL::route('page.services') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Autres Services</a></li>
-            <li class="list-unstyled"><a href="{{ URL::route('page.blog.index') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Blog</a></li>
+            <li class="list-unstyled"><a href="{{ URL::route('blog.index') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Blog</a></li>
             <li class="list-unstyled"><a href="{{ URL::route('page.contact') }}" class="text-decoration-none text-ColorPrivBlue LinkHover">Contact</a></li>
           </ul>
         </div>

@@ -11223,6 +11223,14 @@ body {
     opacity: 1;
   }
 }
+.colorBlue {
+  color: blue;
+}
+
+.colorDark {
+  color: black;
+}
+
 /*---------------------------------------------- CREATION DES CICLES BACKGROUND ------------------------------------------*/
 .cercle {
   overflow: hidden;

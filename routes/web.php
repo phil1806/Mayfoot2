@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\newsController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -53,10 +54,11 @@ Route::view('autreServices','pages.autreServices')->name('page.services');
 /*
   DESC: CHARGE LA PAGE DU BLOG
   PATTERN: /blog
-  CTRL: --//--
-  ACTION:--//-- 
+  CTRL: newsController
+  ACTION: index
 */
-Route::view('/blog','pages.blog.index')->name('page.blog.index');
+
+Route::get('/blog',[newsController::class, 'index'])->name('blog.index');
 
 
 
@@ -64,9 +66,11 @@ Route::view('/blog','pages.blog.index')->name('page.blog.index');
 /*
   DESC: CHARGE LA PAGE DU BLOG
   PATTERN: /details/id/slug.html
-  CTRL: --//--
-  ACTION:--//-- 
+  CTRL: newsController
+  ACTION:show 
 */
-Route::view('/details','pages.blog.show')->name('page.blog.show');
+
+Route::get('blog/{id}/slug.html',[newsController::class, 'show'])->name('blog.show');
+
 
 

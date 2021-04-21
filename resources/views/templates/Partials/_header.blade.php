@@ -30,7 +30,7 @@
           <a class="nav-link text-capitalize fs-5" href="{{ URL::route('page.services') }}"> autre services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-capitalize fs-5" href="{{ URL::route('page.blog.index') }}">blog</a>
+          <a class="nav-link text-capitalize fs-5" href="{{ URL::route('blog.index') }}">blog</a>
         </li>
          <li class="nav-item">
           <a class="nav-link text-capitalize fs-5" href="{{ URL::route('page.contact') }}">contact</a>
