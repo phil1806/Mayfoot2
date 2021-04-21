@@ -1,2 +1,2 @@
 # Projet MayFoot Entreprise
-Laravel + bootstrap 4 + Backpack
+Laravel 8 + bootstrap 5 + Backpack 4.1
