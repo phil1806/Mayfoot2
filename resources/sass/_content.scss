@@ -1,0 +1,257 @@
+/***************************************************************************************************************
+                                        PARTIE BODY
+****************************************************************************************************************/
+ body{
+     background-color: $body-bg;
+      font-family: "EBGaramond";
+      
+ }
+  .font-Reey {
+      font-family: "Reey";
+  }
+
+.font-sketchflow {
+    font-family: "sketchflow";
+}
+
+
+ /******************************************** Partie body de la page d'accueil *******************************************/
+ .slogan-accueil {
+     margin-left:-464px;
+     
+ }
+
+ .rotate_N20dreg{
+    transform: rotate(-12deg);
+ }
+
+
+  /******************************************** Partie body de la page details *******************************************/
+
+ .ColorGrayPriv{
+    background-color:#F7F7F7;
+ }
+ .margin-text-details{
+     margin-top:20px;
+     margin-left:45px;
+     z-index:0;
+     min-height:400px;
+ }
+.margin-image-details{
+  position:absolute;
+  top: 44px;
+  left: 57px;
+  z-index:1;
+}
+
+/******************************************** Partie body de la page Contact *******************************************/
+.CarteDeLocolisation{
+    height: 430px;
+}
+.bande-contact{
+    background-color: #CDCDCD;
+}
+
+
+/******************************************** Partie body de la page Autre de services *******************************************/
+
+.descSoinPaliatif{
+    margin-top: -145px;
+}
+.sizeImageReflex{
+    margin-left: 39px;
+}
+ .slogan-nonSoins {
+     position: absolute;
+     top: 205px;
+     left:480px;
+ }
+
+
+
+/******************************************** Partie body de la page Nos soins *******************************************/
+
+ .PositionCardSoins {
+     position:absolute;
+     bottom:-54px;
+ }
+
+ .CardSoins{
+     background-color: #cd0575;
+ }
+
+ .marginUse{
+     margin-top:200px;
+  
+ }
+
+ .bodyPageSoins{
+     background-color:#e0eaff;
+ }
+
+
+ .linkDease{
+     color: black;
+ }
+
+ //Animations des photos (traitement de base / spécialisation)
+.flash img:hover{
+    opacity: 1;
+    animation: flash 1.5s;
+
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+ 
+
+/*---------------------------------------------- CREATION DES CICLES BACKGROUND ------------------------------------------*/
+
+.cercle {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.cercle-index-2 {
+    clip-path: circle(50%);
+    background-color: $colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-32%, 24%);
+}
+
+.cercle-index-1 {
+    clip-path: circle(39%);
+    background-color: $colorCercle-1;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(33%, -24%);
+}
+
+.cercle-tarif-2 {
+    clip-path: circle(50%);
+    background-color: $colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(14%, 49%);
+}
+
+.cercle-tarif-1 {
+    clip-path: circle(50%);
+    background-color: $colorCercle-4;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-41%, -12%);
+}
+
+.cercle-actus {
+    clip-path: circle(50%);
+    background-color: $colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-43%, -9%);
+}
+
+.cercle-contact-2 {
+    clip-path: circle(50%);
+    background-color: $colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-18%, 36%);
+}
+
+.cercle-contact-1 {
+    clip-path: circle(39%);
+    background-color: $colorCercle-1;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(33%, -28%);
+}
+
+.cercle-realisation {
+    clip-path: circle(39%);
+    background-color: $colorCercle-3;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-19%, 22%);
+}
+
+.cercle-index-7{
+    clip-path: circle(39%);
+    background-color: $colorCercle-7;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(33%, 7%);
+}
+
+.cercle-blog-1{
+    clip-path: circle(30%);
+    background-color: $colorCercle-8;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(-36%, 8%);
+}
+
+.cercle-blog-2 {
+    clip-path: circle(30%);
+    background-color: $colorCercle-1;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(25%, -39%);
+}
+
+.cercle-blog-3 {
+    clip-path: circle(30%);
+    background-color: $colorCercle-2;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(40%, -52%);
+}
+
+.cercle-soins-1 {
+    clip-path: circle(39%);
+    background-color: #aadbe3;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    z-index: -2;
+    transform: translate(33%, 7%);
+}
