@@ -4,7 +4,7 @@
  body{
      background-color: $body-bg;
       font-family: "EBGaramond";
-      
+
  }
   .font-Reey {
       font-family: "Reey";
@@ -16,10 +16,42 @@
 
 
  /******************************************** Partie body de la page d'accueil *******************************************/
- .slogan-accueil {
-     margin-left:-464px;
-     
+
+  .slogan-accueil {
+     display: none;
+  }
+  @include media-breakpoint-up(sm) {
+      .slogan-accueil {
+          display: inline;
+          margin-left:-267px;
+          font-size: 2em;
+      }
+  }
+
+  @include media-breakpoint-up(md){
+    .slogan-accueil {
+
+        margin-left: -270px;
+    }
+  }
+
+   @include media-breakpoint-up(xl) {
+       .slogan-accueil {
+          font-size:3.2em;
+           margin-left: -392px;
+       }
+   }
+
+
+ @include media-breakpoint-up(xxl) {
+     .slogan-accueil {
+         font-size:3.5em;
+         display: inline;
+         margin-left: -410px;
+
+     }
  }
+
 
  .rotate_N20dreg{
     transform: rotate(-12deg);
@@ -82,7 +114,7 @@
 
  .marginUse{
      margin-top:200px;
-  
+
  }
 
  .bodyPageSoins{
@@ -116,7 +148,7 @@
 .colorDark{
     color:black;
 }
- 
+
 
 /*---------------------------------------------- CREATION DES CICLES BACKGROUND ------------------------------------------*/
 
@@ -259,4 +291,8 @@
     position: absolute;
     z-index: -2;
     transform: translate(33%, 7%);
+}
+
+.bouge{
+     margin-top: -25px;
 }

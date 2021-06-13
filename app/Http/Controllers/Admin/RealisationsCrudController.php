@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\NewsRequest;
+use App\Http\Requests\RealisationsRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class NewsCrudController
+ * Class RealisationsCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class NewsCrudController extends CrudController
+class RealisationsCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -26,9 +26,9 @@ class NewsCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\News::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/news');
-        CRUD::setEntityNameStrings('news', 'news');
+        CRUD::setModel(\App\Models\Realisations::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/realisations');
+        CRUD::setEntityNameStrings('realisations', 'realisations');
     }
 
     /**
@@ -39,20 +39,14 @@ class NewsCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        //CRUD::setFromDb(); // columns
-
         CRUD::column('id')->type('number');
         CRUD::column('titre')->type('text');
-        CRUD::column('content')->type('tinymce');
+        CRUD::column('description')->type('tinymce');
         CRUD::column('image')->type('image');
+        CRUD::column('image1')->type('image');
         CRUD::column('created_at')->type('datetime');
         CRUD::column('updated_at')->type('datetime');
 
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
-         */
     }
 
     /**
@@ -63,13 +57,11 @@ class NewsCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(NewsRequest::class);
+        CRUD::setValidation(RealisationsRequest::class);
 
-        //CRUD::setFromDb(); // fields
-        //CRUD::field('id');
-
+        //ici les differents fields dans le back office
         $this->crud->addField([
-                'label' => "Profile Image",
+                'label' => "Image before",
                 'name' => "image",
                 'type' => 'image',
                 'crop' => true,
@@ -77,21 +69,28 @@ class NewsCrudController extends CrudController
                 'disk'      => 'uploads',
                 'prefix'    => 'uploads/images'
         ]);
+
+        $this->crud->addField([
+                'label' => "Image after",
+                'name' => "image1",
+                'type' => 'image',
+                'crop' => true,
+                'aspect_ratio' =>-1,
+                'disk'      => 'uploads',
+                'prefix'    => 'uploads/images'
+        ]);
         CRUD::field('titre')->type('text');
+
         CRUD::AddField([
-                    'name'  => 'content',
+                    'name'  => 'description',
                     'label' => 'Description',
                     'type'  => 'tinymce',
         ],);
-        CRUD::field('created_at')->type('datetime');
-        
+
+        CRUD::field('created_at');
 
 
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number']));
-         */
+
     }
 
     /**

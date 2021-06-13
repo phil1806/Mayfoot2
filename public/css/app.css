@@ -11128,9 +11128,34 @@ body {
 
 /******************************************** Partie body de la page d'accueil *******************************************/
 .slogan-accueil {
-  margin-left: -464px;
+  display: none;
 }
 
+@media (min-width: 576px) {
+  .slogan-accueil {
+    display: inline;
+    margin-left: -267px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .slogan-accueil {
+    margin-left: -270px;
+  }
+}
+@media (min-width: 1200px) {
+  .slogan-accueil {
+    font-size: 3.2em;
+    margin-left: -392px;
+  }
+}
+@media (min-width: 1400px) {
+  .slogan-accueil {
+    font-size: 3.5em;
+    display: inline;
+    margin-left: -410px;
+  }
+}
 .rotate_N20dreg {
   transform: rotate(-12deg);
 }
@@ -11383,4 +11408,8 @@ body {
   position: absolute;
   z-index: -2;
   transform: translate(33%, 7%);
+}
+
+.bouge {
+  margin-top: -25px;
 }

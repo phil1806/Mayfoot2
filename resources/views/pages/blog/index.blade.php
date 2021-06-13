@@ -33,11 +33,11 @@ Blog
                             <div class="my-1 colorBlue">Date de publication : <span
                                     class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                             </div>
-                            <div class="card-text">{!! Str::words($new->content,30) !!}</div>
+                            <div class="card-text">{!! Str::words($new->content,30) !!}...</div>
                             <a type="button"
                                 href="{{ URL::route('blog.show',['id'=>$new->id,'slug'=>Str::slug($new->titre, '-')]) }}"
                                 class="btn btn-outline-ColorPrivBlue text-uppercase fw-bold text-bottom mt-3">lire
-                                details
+                                suite
                             </a>
                         </div>
                     </div>
@@ -55,11 +55,11 @@ Blog
                             <div class="my-1 colorBlue">Date de publication : <span
                                     class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                             </div>
-                             <div class="card-text">{!! Str::words($new->content,30) !!}</div>
+                             <div class="card-text">{!! Str::words($new->content,30) !!}...</div>
                             <a type="button"
                                 href="{{ URL::route('blog.show',['id'=>$new->id,'slug'=>Str::slug($new->titre, '-')]) }}"
                                 class="btn btn-outline-ColorPrivBlue text-uppercase fw-bold text-bottom mt-3">lire
-                                details
+                                suite
                             </a>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ Blog
             <div class="card shadow-lg my-2">
                 <div class="row">
                     <div class="col-12 col-lg-8">
-                        <img src=" {{ asset('storage/'.$new->image) }}" class="card-img w-100" alt="image news">
+                        <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news">
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card-body h-100">
@@ -82,11 +82,11 @@ Blog
                             <div class="my-1 colorBlue">Date de publication : <span
                                     class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                             </div>
-                            <div class="card-text">{!! Str::words($new->content,30) !!}</div>
+                            <div class="card-text">{!! Str::words($new->content,30) !!}...</div>
                             <a type="button"
                                 href="{{ URL::route('blog.show',['id'=>$new->id,'slug'=>Str::slug($new->titre, '-')]) }}"
                                 class="btn btn-outline-ColorPrivBlue text-uppercase fw-bold text-bottom mt-3">lire
-                                details</a>
+                                suite</a>
                         </div>
                     </div>
                 </div>

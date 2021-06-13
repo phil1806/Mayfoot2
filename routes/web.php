@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\newsController;
+use App\Http\Controllers\realisationsController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 //  ROUTES ACCUEUIL ------------------------------------------------------------
 /*
-  DESC: CHARGE LA PAGE D'ACCUEIL 
+  DESC: CHARGE LA PAGE D'ACCUEIL
   PATTERN: /
-  CTRL: --//-- 
+  CTRL: --//--
   ACTION:--//--
 */
 Route::view('/','pages.accueil')->name('page.accueil');
@@ -27,7 +28,7 @@ Route::view('/','pages.accueil')->name('page.accueil');
   DESC: CHARGE LA PAGE DE CONTACT
   PATTERN: /contact
   CTRL: --//--
-  ACTION:--//-- 
+  ACTION:--//--
 */
 Route::view('contact','pages.contact')->name('page.contact');
 
@@ -36,7 +37,7 @@ Route::view('contact','pages.contact')->name('page.contact');
   DESC: CHARGE LA PAGE DE CONTACT
   PATTERN: /contact
   CTRL: --//--
-  ACTION:--//-- 
+  ACTION:--//--
 */
 Route::view('soins','pages.soins')->name('page.soins');
 
@@ -45,7 +46,7 @@ Route::view('soins','pages.soins')->name('page.soins');
   DESC: CHARGE LA PAGE DE CONTACT
   PATTERN: /services
   CTRL: --//--
-  ACTION:--//-- 
+  ACTION:--//--
 */
 Route::view('autreServices','pages.autreServices')->name('page.services');
 
@@ -67,10 +68,21 @@ Route::get('/blog',[newsController::class, 'index'])->name('blog.index');
   DESC: CHARGE LA PAGE DU BLOG
   PATTERN: /details/id/slug.html
   CTRL: newsController
-  ACTION:show 
+  ACTION:show
 */
 
 Route::get('blog/{id}/slug.html',[newsController::class, 'show'])->name('blog.show');
+
+
+
+//  ROUTES REALISATION ------------------------------------------------------------
+/*
+  DESC: CHARGE LA PAGE DES REALISATIONS
+  PATTERN: /realisations
+  CTRL: realisationsController
+  ACTION: index
+*/
+Route::get('/realisation',[realisationsController::class, 'index'])->name('realisations.index');
 
 
 

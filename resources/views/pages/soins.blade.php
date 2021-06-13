@@ -134,9 +134,11 @@ contact
                         </div>
                     </div>
                     <a href="" class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">orthonyxie</a>
-                    <a href="" class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">l'oxychloplastie</a>
+                    <a href=""
+                        class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">l'oxychloplastie</a>
                     <a href="" class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">mycoses</a>
-                    <a href=""class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">hyperkératoses</a>
+                    <a href=""
+                        class="fw-bold text-capitalize fs-4 text-decoration-none text-dark mx-2">hyperkératoses</a>
                 </div>
             </div>
             <div class="col-md-6 p-0 ">

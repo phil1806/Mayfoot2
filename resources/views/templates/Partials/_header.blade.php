@@ -3,17 +3,11 @@
     Description: Templates par default
     Données disponible: -- // --
 --}}
-{{--  <div class="d-flex justify-content-start"style="background-color:#6b6b6b" >
-    <div >
-      <a class="navbar-brand text-white fw-bold font-Reey d-block p-0 m-0" href="{{ URL::route('page.accueil') }}" style="width:133px; heigth:60px">
-       <img src="{{ asset('images/logo1.png') }}" alt="" class="img-fluid">
-      </a>
-    </div>
-</div>  --}}
+
 <nav class="navbar navbar-expand-md Private-bg-nav navbar-dark p-1 sticky-top">
   <div class="container">
-    <a class="navbar-brand text-white fw-bold font-Reey d-block p-0 m-0" href="{{ URL::route('page.accueil') }}" style="width:133px; heigth:60px">
-       <img src="{{ asset('images/logo1.png') }}" alt="" class="img-fluid">
+    <a class="navbar-brand text-white fw-bold font-Reey d-block p-0 m-0" href="{{ URL::route('page.accueil') }}" >
+       <img src="{{ asset('images/logo1.png') }}" alt="logo mayfoot"  width="133" heigth="60">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,6 +22,9 @@
         </li>
             <li class="nav-item">
           <a class="nav-link text-capitalize fs-5" href="{{ URL::route('page.services') }}"> autre services</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-capitalize fs-5" href="{{ URL::route('realisations.index') }}">Nos Réalisations</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-capitalize fs-5" href="{{ URL::route('blog.index') }}">blog</a>

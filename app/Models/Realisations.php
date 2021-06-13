@@ -8,12 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
-
-
-class News extends Model
+class Realisations extends Model
 {
     use CrudTrait;
-    protected $table = 'news';
+    protected $table ='realisations';
     protected $guarded = ['id'];
 
 
@@ -54,8 +52,10 @@ class News extends Model
             $public_destination_path = Str::replaceFirst('public/', '', $destination_path);
             $this->attributes[$attribute_name] = $public_destination_path.'/'.$filename;
         }
+
     }
 
+    //Methode permettant de supprimer  les images stockée dans la db
     public static function boot()
     {
       parent::boot();
