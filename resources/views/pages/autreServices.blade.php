@@ -55,15 +55,17 @@ Autre Services
         <div class="col-md-4">
             <article class="h-100">
                 <div class="h1">Reflexiologie Plantaire</div>
-                <p class=" fs-6">            
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    . Corporis, ipsa? Delectus quae maiores, nemo, magnam,
-                    iusto ipsam corrupti dolor facere impedit optio nesciunt
-                    eque dicta voluptatem explicabo modi ratione eius.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    . Corporis, ipsa? Delectus quae maiores, nemo, magnam,
-                    iusto ipsam corrupti dolor facere impedit optio nesciunt
-                    eque dicta voluptatem explicabo modi ratione eius.
+                <p class=" fs-6">
+                    <span class="fw-bold">La réflexologie</span> est une pratique se présentant comme thérapeutique
+                    et utilisant le massage. Elle repose sur le précepte pseudo-scientifique
+                    que chaque organe, partie du corps ou fonction physiologique correspondrait
+                    à une zone ou un point sur les mains, les pieds ou les oreilles. Selon ses
+                    praticiens, un toucher spécifique sur ces zones permettrait ainsi de localiser
+                    et dissiper les tensions afin de rétablir l'équilibre du corps. Néanmoins,
+                    l'idée qu'il existerait des voies réflexes entre une aire donnée du pied,
+                    de la main ou de l'oreille, et un organe particulier est une croyance sans fondement biologique.
+                    À ce jour, les essais cliniques ne démontrent d'ailleurs aucune efficacité propre de la réflexologie,
+                    tant sur le plan diagnostique que thérapeutique1. Elle est aussi efficace que le simple repos.
                 </p>
             </article>
         </div>
@@ -73,14 +75,11 @@ Autre Services
             <article class="h-100">
                 <div class="h1">Soins paliatif</div>
                 <p class=" fs-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    . Corporis, ipsa? Delectus quae maiores, nemo, magnam,
-                    iusto ipsam corrupti dolor facere impedit optio nesciunt
-                    eque dicta voluptatem explicabo modi ratione eius.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    . Corporis, ipsa? Delectus quae maiores, nemo, magnam,
-                    iusto ipsam corrupti dolor facere impedit optio nesciunt
-                    eque dicta voluptatem explicabo modi ratione eius.
+                   <span class="fw-bold">Les soins palliatifs </span>sont des soins qui ne visent qu'au confort du malade,
+                    souvent en phase de fin de vie. L'objectif des soins palliatifs est de prévenir
+                     et de soulager les douleurs physiques, les symptômes inconfortables (nausées, constipation, anxiété...)
+                    ou encore la souffrance psychologique. Un soin palliatif est une mesure visant à endiguer les conséquences
+                     d'un grave problème médical, en ne se préoccupant plus de sa cause.
                 </p>
             </article>
         </div>

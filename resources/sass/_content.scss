@@ -84,6 +84,14 @@
     background-color: #CDCDCD;
 }
 
+.coordoneeContact{
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: inline;
+    }
+}
+
 
 /******************************************** Partie body de la page Autre de services *******************************************/
 

@@ -29,8 +29,7 @@ Nos-Réalisations
 </div> --}}
 <div class="row">
     @foreach ($realisations as $item)
-    <div class="col-md-4 p-0">
-
+    <div class="col-sm-6 col-lg-4 p-0">
         <div class="card shadow-lg position-relative ">
             <h5 class="card-title position-absolute top-0 start-3 text-white fw-bold h3 p-2 text-capitalize">
                 {{ $item->titre }}</h5>

@@ -31,7 +31,7 @@ Contact
 <!-- Formulaire-->
 <div class="container">
     <div class="row">
-        <div class="offset-1 col-md-6">
+        <div class="col-12 offset-xxl-1 col-md-6">
             <div class="text-uppercase fw-bold h4">Formulaire de contact</div>
             <form action="" class="mb-5">
                 <label for="exampleFormControlTextarea1" class="form-label mt-2 fw-bold">Name</label>
@@ -50,7 +50,7 @@ Contact
                 </div>
             </form>
         </div>
-        <div class="col-md-5">
+        <div class="col-12 col-md-5 coordoneeContact">
             <div class="h-100 d-flex justify-content-end">
                 <div class="h-100 d-flex">
                     <div class="align-self-center">
