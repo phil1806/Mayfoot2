@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\newsController;
-use App\Http\Controllers\realisationsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\newsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\realisationsController;
 
 
 
@@ -23,14 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::view('/','pages.accueil')->name('page.accueil');
 
-//  ROUTES CONTZCT------------------------------------------------------------
-/*
-  DESC: CHARGE LA PAGE DE CONTACT
-  PATTERN: /contact
-  CTRL: --//--
-  ACTION:--//--
-*/
-Route::view('contact','pages.contact')->name('page.contact');
+
 
 //  ROUTES NOS SOINS------------------------------------------------------------
 /*
@@ -71,7 +65,7 @@ Route::get('/blog',[newsController::class, 'index'])->name('blog.index');
   ACTION:show
 */
 
-Route::get('blog/{id}/slug.html',[newsController::class, 'show'])->name('blog.show');
+Route::get('blog/{id}/{slug}.html',[newsController::class, 'show'])->name('blog.show');
 
 
 
@@ -83,6 +77,19 @@ Route::get('blog/{id}/slug.html',[newsController::class, 'show'])->name('blog.sh
   ACTION: index
 */
 Route::get('/realisation',[realisationsController::class, 'index'])->name('realisations.index');
+
+
+//  ROUTES CONTACT ------------------------------------------------------------
+/*
+  DESC: CHARGE LA PAGE DES REALISATIONS
+  PATTERN: /contact
+  CTRL: ContactCotroller
+  ACTION: create
+*/
+Route::get('contact',[ContactController::class, 'create'])->name('page.contact');
+Route::post('contact',[ContactController::class, 'store']);
+
+
 
 
 

@@ -1,5 +1,5 @@
 {{--
-    Chemin :/resources/views/pages/contact.blade.php
+    Chemin :/resources/views/pages/contact/create.blade.php
     Description: Affiche le contenu de la page  Autre services
     Données disponible: -- // --
 --}}
@@ -15,8 +15,8 @@ Contact
 <div class="p-2 bande-contact">
     <div class="container">
         <div class="d-flex justify-content-between">
-            <div class="text-uppercase fw-bold h4 ">Contact us</div>
-            <div class="fw-bold text-uppercase">Accueil > contact</div>
+            <div class="text-uppercase fw-bold h4  animate__animated animate__fadeInDown">Contact us</div>
+            <div class="fw-bold text-uppercase  animate__animated animate__fadeInDown">Accueil > contact</div>
         </div>
     </div>
 </div>
@@ -28,25 +28,39 @@ Contact
     </iframe>
 </div>
 
-<!-- Formulaire-->
+<!-- Formulaire de Contact-->
 <div class="container">
     <div class="row">
         <div class="col-12 offset-xxl-1 col-md-6">
             <div class="text-uppercase fw-bold h4">Formulaire de contact</div>
-            <form action="" class="mb-5">
-                <label for="exampleFormControlTextarea1" class="form-label mt-2 fw-bold">Name</label>
-                <input class="form-control " type="text" placeholder="Nom" aria-label="default input example">
-
-                <label for="exampleFormControlTextarea1" class="form-label mt-2 fw-bold">Email</label>
-                <input class="form-control" type="text" placeholder="Name@example.com"
-                    aria-label="default input example">
-
-                <label for="exampleFormControlTextarea1" class="form-label mt-2 fw-bold">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                    placeholder="Entrez votre message..."></textarea>
+            <form action="contact" method="POST" class="mb-5">
+                @csrf
+                <!-- Nom du client -->
+                <div class="form-group">
+                    <label class="form-label mt-2 fw-bold">Name</label>
+                    <input class="form-control @error('name') is-invalid @enderror" type="text" placeholder="Nom" name="name" value="{{ old('name') }}">
+                     @error('name')
+                         <div class="invalid-feedback">{{ $errors->first('name') }}</div>
+                     @enderror
+                </div>
+                <!-- Email du client -->
+                <div class="form-group">
+                    <label class="form-label mt-2 fw-bold">Email</label>
+                    <input class="form-control @error('email') is-invalid @enderror" type="email" placeholder="Name@example.com" value="{{ old('email') }}" name="email">
+                     @error('email')
+                         <div class="invalid-feedback">{{ $errors->first('email') }}</div>
+                     @enderror
+                </div>
+                <!-- Message du client -->
+                <div class="form-group">
+                     <label  class="form-label mt-2 fw-bold">Message</label>
+                    <textarea class="form-control @error('message') is-invalid @enderror" rows="5" placeholder="Entrez votre message..." value="{{ old('message') }}" name="message"></textarea>
+                     @error('message')
+                         <div class="invalid-feedback">{{ $errors->first('message') }}</div>
+                     @enderror
+                </div>
                 <div class="my-4">
-
-                    <button class="btn btn-outline-ColorPrivBlue w-100 text-uppercase fw-bold fs-5" type="button">envoyer</button>
+                    <button class="btn btn-outline-ColorPrivBlue w-100 text-uppercase fw-bold fs-5" type="submit">envoyer message</button>
                 </div>
             </form>
         </div>
@@ -63,7 +77,7 @@ Contact
                                         <path
                                             d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
                                     </svg>
-                                    <span class="text-ColorPrivBlue">04 88 89 13 62 </span>
+                                    <span class="text-ColorPrivBlue">+32 492 10 55 45   /  +32 465 65 18 50 </span>
                                 </span>
                             </li>
                             <li>
@@ -73,7 +87,7 @@ Contact
                                         <path
                                             d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
                                     </svg>
-                                    <span class="text-ColorPrivBlue">mavis.frimpong@hotmail.be</span>
+                                    <span class="text-ColorPrivBlue">mayfoots@gmail.com</span>
                                 </span>
                             </li>
                             <li>
@@ -93,8 +107,4 @@ Contact
         </div>
     </div>
 </div>
-
-{{-- <div class="cercle">
-  <div class="cercle-index-7"></div>
-</div>  --}}
 @stop

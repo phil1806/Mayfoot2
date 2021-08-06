@@ -13,15 +13,15 @@ Accueil
 @section('content')
 <!-- Section Image d'accueil et slogan-->
 <div class="position-relative d-block w-100">
-    <img src="{{asset('images/firstImage.jpeg')}}" alt="image d'accueil" class="img-fluid w-100 d-block">
-    <div class="text-white slogan-accueil display-4 font-Reey position-absolute top-50 start-50 text-capitalize">Votre satisfaction est notre priorité</div>
+    <img src="{{asset('images/firstImage.jpeg')}}" alt="image d'accueil" class="w-100 d-block imageAccueil">
+    <div class="text-white slogan-accueil display-4 font-Reey position-absolute top-50 start-50 text-capitalize animate__animated animate__flipInY  animate__delay-1s animate__slower 500ms">Votre satisfaction est notre priorité</div>
 </div>
 <!-- Body-->
-<div class="container py-5 py-xxl-6">
+<div class="container-md py-5 py-xxl-6">
     <div class="row">
         <div class="col-12 col-md-4 col-xxl-6">
             <div class="h-100 d-flex justify-content-center">
-                <div class="font-Reey display-5 align-self-center rotate_N20dreg">MayFoot</div>
+                <div class="font-Reey display-5 align-self-center rotate_N20dreg " >MayFoot</div>
             </div>
         </div>
         <div class="col-12 col-md-8 col-xxl-6">

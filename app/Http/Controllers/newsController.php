@@ -13,8 +13,8 @@ class newsController extends Controller
         return view('pages.blog.index', compact('news','i'));
     }
 
-    public function show(int $id){
-        $new = News::find($id);
+    public function show( $id){
+        $new =  News::where('id', $id)->firstOrFail();
         return view('pages.blog.show', compact('new'));
     }
 }

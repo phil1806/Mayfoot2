@@ -11116,6 +11116,7 @@ footer .LinkHover:hover {
 body {
   background-color: #F7F7F7;
   font-family: "EBGaramond";
+  font-size: 1em;
 }
 
 .font-Reey {
@@ -11124,6 +11125,16 @@ body {
 
 .font-sketchflow {
   font-family: "sketchflow";
+}
+
+.imageAccueil {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: lightgray;
+}
+
+.alertMessageEnvoye {
+  background: #d1e7dd;
 }
 
 /******************************************** Partie body de la page d'accueil *******************************************/
@@ -11146,7 +11157,7 @@ body {
 @media (min-width: 1200px) {
   .slogan-accueil {
     font-size: 3.2em;
-    margin-left: -392px;
+    margin-left: -452px;
   }
 }
 @media (min-width: 1400px) {
@@ -11198,32 +11209,157 @@ body {
 }
 
 /******************************************** Partie body de la page Autre de services *******************************************/
-.descSoinPaliatif {
-  margin-top: -145px;
+.sizeImageReflex {
+  width: 100%;
 }
 
-.sizeImageReflex {
-  margin-left: 39px;
+.slogan-autreService {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .slogan-autreService {
+    display: inline;
+    margin-left: -267px;
+    font-size: 2em;
+  }
+
+  .sizeImageReflex {
+    padding-left: 3px;
+  }
+
+  .sizeImagePaliatif {
+    padding-right: 9px;
+  }
+}
+@media (min-width: 768px) {
+  .slogan-autreService {
+    margin-left: -270px;
+  }
+
+  .sizeImageReflex {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .sizeImagePaliatif {
+    padding-right: 0px;
+  }
+
+  .descSoinPaliatif {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .sizeImageReflex {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .slogan-autreService {
+    font-size: 3.2em;
+    margin-left: -366px;
+  }
+
+  .descSoinPaliatif {
+    margin-top: -145px;
+  }
+
+  .sizeImageReflex {
+    margin-left: 39px;
+    width: 75%;
+  }
+}
+@media (min-width: 1400px) {
+  .slogan-autreService {
+    font-size: 3.5em;
+    display: inline;
+    margin-left: -410px;
+  }
+}
+/******************************************** Partie body de la page Nos soins *******************************************/
+.imageTraitementDeBase {
+  width: 100%;
 }
 
 .slogan-nonSoins {
   position: absolute;
-  top: 205px;
-  left: 480px;
+  top: 36px;
+  left: 30px;
+  font-size: 1em;
 }
 
-/******************************************** Partie body de la page Nos soins *******************************************/
 .PositionCardSoins {
   position: absolute;
-  bottom: -54px;
+  bottom: -117px;
+  right: 10px;
 }
 
+@media (min-width: 576px) {
+  .slogan-nonSoins {
+    position: absolute;
+    top: 61px;
+    left: 148px;
+    font-size: 1.5em;
+  }
+
+  .PositionCardSoins {
+    position: absolute;
+    bottom: -54px;
+    right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .slogan-nonSoins {
+    position: absolute;
+    top: 61px;
+    left: 86px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .slogan-nonSoins {
+    position: absolute;
+    top: 81px;
+    left: 148px;
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .slogan-nonSoins {
+    position: absolute;
+    top: 120px;
+    left: 207px;
+    font-size: 3em;
+  }
+}
+@media (min-width: 1400px) {
+  .slogan-nonSoins {
+    position: absolute;
+    top: 178px;
+    left: 307px;
+    font-size: 4em;
+  }
+
+  .imageTraitementDeBase {
+    width: 75%;
+  }
+
+  .descTraitementDeBase {
+    padding-right: 19px;
+  }
+
+  .descTraitementSpecialise {
+    padding-left: 65px;
+  }
+}
 .CardSoins {
   background-color: #cd0575;
 }
 
 .marginUse {
-  margin-top: 200px;
+  margin-top: 139px;
 }
 
 .bodyPageSoins {

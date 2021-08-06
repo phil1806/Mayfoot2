@@ -87,9 +87,7 @@ class RealisationsCrudController extends CrudController
                     'type'  => 'tinymce',
         ],);
 
-        CRUD::field('created_at');
-
-
+        //CRUD::field('created_at');
 
     }
 

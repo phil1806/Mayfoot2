@@ -2,9 +2,9 @@
                                         PARTIE BODY
 ****************************************************************************************************************/
  body{
-     background-color: $body-bg;
-      font-family: "EBGaramond";
-
+    background-color: $body-bg;
+    font-family: "EBGaramond";
+    font-size:1em;
  }
   .font-Reey {
       font-family: "Reey";
@@ -13,13 +13,21 @@
 .font-sketchflow {
     font-family: "sketchflow";
 }
-
+.imageAccueil{
+    object-fit:cover;
+    background-color: lightgray;
+}
+.alertMessageEnvoye{
+  background: #d1e7dd;
+}
 
  /******************************************** Partie body de la page d'accueil *******************************************/
+
 
   .slogan-accueil {
      display: none;
   }
+
   @include media-breakpoint-up(sm) {
       .slogan-accueil {
           display: inline;
@@ -38,7 +46,7 @@
    @include media-breakpoint-up(xl) {
        .slogan-accueil {
           font-size:3.2em;
-           margin-left: -392px;
+           margin-left: -452px;
        }
    }
 
@@ -95,33 +103,168 @@
 
 /******************************************** Partie body de la page Autre de services *******************************************/
 
-.descSoinPaliatif{
-    margin-top: -145px;
+
+.sizeImageReflex {
+    width: 100%;
 }
-.sizeImageReflex{
-    margin-left: 39px;
+
+.slogan-autreService {
+    display: none;
 }
- .slogan-nonSoins {
-     position: absolute;
-     top: 205px;
-     left:480px;
- }
+
+@include media-breakpoint-up(sm) {
+    .slogan-autreService {
+        display: inline;
+        margin-left: -267px;
+        font-size: 2em;
+    }
+
+    .sizeImageReflex {
+        padding-left: 3px;
+    }
+
+    .sizeImagePaliatif {
+        padding-right: 9px;
+
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .slogan-autreService {
+        margin-left: -270px;
+    }
+    .sizeImageReflex {
+         width: 100%;
+         padding-left: 0px;
+     }
+
+     .sizeImagePaliatif {
+         padding-right: 0px;
+
+     }
+     .descSoinPaliatif {
+         margin-top: 10px;
+     }
+}
+@include media-breakpoint-up(lg) {
+     .sizeImageReflex {
+         margin-left: 0px;
+         width: 100%;
+     }
+
+}
+
+@include media-breakpoint-up(xl) {
+    .slogan-autreService {
+        font-size: 3.2em;
+        margin-left: -366px;
+    }
+    .descSoinPaliatif {
+        margin-top: -145px;
+    }
+     .sizeImageReflex {
+         margin-left: 39px;
+         width: 75%;
+     }
+}
+
+@include media-breakpoint-up(xxl) {
+    .slogan-autreService {
+        font-size: 3.5em;
+        display: inline;
+        margin-left: -410px;
+
+    }
+}
 
 
 
 /******************************************** Partie body de la page Nos soins *******************************************/
 
- .PositionCardSoins {
-     position:absolute;
-     bottom:-54px;
+
+.imageTraitementDeBase{
+    width: 100%;
+}
+
+ .slogan-nonSoins {
+     position: absolute;
+     top: 36px;
+     left: 30px;
+     font-size:1em;
  }
+
+.PositionCardSoins {
+    position: absolute;
+    bottom: -117px;
+    right: 10px;
+}
+
+ @include media-breakpoint-up(sm){
+     .slogan-nonSoins {
+         position: absolute;
+         top: 61px;
+         left: 148px;
+         font-size:1.5em;
+     }
+     .PositionCardSoins {
+         position: absolute;
+         bottom: -54px;
+         right: 10px;
+     }
+ }
+  @include media-breakpoint-up(md) {
+      .slogan-nonSoins {
+          position: absolute;
+          top: 61px;
+          left: 86px;
+          font-size:2em;
+      }
+  }
+
+  @include media-breakpoint-up(lg) {
+      .slogan-nonSoins {
+          position: absolute;
+          top: 81px;
+          left: 148px;
+          font-size: 2.5em;
+      }
+  }
+
+  @include media-breakpoint-up(xl) {
+      .slogan-nonSoins {
+          position: absolute;
+          top: 120px;
+          left: 207px;
+          font-size:3em;
+      }
+  }
+
+@include media-breakpoint-up(xxl) {
+     .slogan-nonSoins {
+         position: absolute;
+         top: 178px;
+         left: 307px;
+         font-size:4em;
+     }
+     .imageTraitementDeBase {
+         width:75%;
+     }
+     .descTraitementDeBase {
+        padding-right: 19px;
+     }
+     .descTraitementSpecialise{
+        padding-left: 65px;
+     }
+}
+
+
 
  .CardSoins{
      background-color: #cd0575;
  }
 
  .marginUse{
-     margin-top:200px;
+     margin-top:139px;
 
  }
 
@@ -302,5 +445,5 @@
 }
 
 .bouge{
-     margin-top: -25px;
+     margin-top:-25px;
 }

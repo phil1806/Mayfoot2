@@ -36,4 +36,9 @@
     </div>
   </div>
 </nav>
+ @if (session()->has('message'))
+    <div class="alert text-center my-0 fs-5 alertMessageEnvoye" role="alert">
+        {{ session()->get('message') }}
+    </div>
+@endif
 

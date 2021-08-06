@@ -12,7 +12,7 @@ Nos-Réalisations
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-12  my-5 fw-bold font-sketchflow text-uppercase h1">
+        <div class="col-12  my-5 fw-bold font-sketchflow text-uppercase h1 animate__animated animate__fadeInDown ">
             <div class="my-4">Nos réalisations</div>
         </div>
     </div>
