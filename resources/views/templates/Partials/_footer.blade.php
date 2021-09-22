@@ -29,7 +29,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill mb-1 mr-2" viewBox="0 0 16 16">
               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
             </svg>
-            <a href="#" class="text-decoration-none text-ColorPrivBlue LinkHover"> Rue de l'industrie 39 4420 Saint-Nicolas</a>
+            <a href="#" class="text-decoration-none text-ColorPrivBlue LinkHover">Rue Lavaniste - Voie 213/B, 4000 Liège</a>
           </li>
         </ul>
       </div>
@@ -57,7 +57,7 @@
         <div class="h-100 text-start text-sm-end">
             <p class="fw-bold mb-2 mb-sm-0">Suivez-moi</p>
               <div class="mb-3 mb-md-0">
-                <a href="https://www.facebook.com/108574651522623" class="text-decoration-none" target="_blank"><img src="{{asset('images/facebook.png')}}" alt="facebook" height="30px" width="30px"></a>
+                <a href="https://www.facebook.com/mayfootEntreprise" class="text-decoration-none" target="_blank"><img src="{{asset('images/facebook.png')}}" alt="facebook" height="30px" width="30px"></a>
                 <a href="https://www.instagram.com/mayfootcompagny/" class="text-decoration-none" target="_blank"><img src="{{asset('images/instagram.png')}}" alt="instagram" height="30px" width="30px"></a>
                 <a href="#" class="text-decoration-none"><img src="{{asset('images/Linkedin.png')}}" alt="Linkdin" height="30px" width="30px"></a>
                 <a href="#" class="text-decoration-none"><img src="{{asset('images/twitter.png')}}" alt="twitter"  height="30px" width="30px"></a>
@@ -67,7 +67,7 @@
       <div class="col-12">
         <div class="text-center">
           <div class="border"></div>
-          <p class="m-0">Copyright © 2020 Phil Tchatchoua. Tous droits réservés.</p>
+          <p class="m-0">Copyright © 2021 Mayfoot Tous droits réservés | Réalisé par Phil Tchatchoua</p>
         </div>
       </div>
     </div>

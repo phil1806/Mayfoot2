@@ -13,16 +13,22 @@
 .font-sketchflow {
     font-family: "sketchflow";
 }
-.imageAccueil{
-    object-fit:cover;
-    background-color: lightgray;
+
+.actionFiltreDark:hover {
+    .filtreDark {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 100;
+    }
 }
-.alertMessageEnvoye{
-  background: #d1e7dd;
-}
+
 
  /******************************************** Partie body de la page d'accueil *******************************************/
-
 
   .slogan-accueil {
      display: none;
@@ -65,6 +71,11 @@
     transform: rotate(-12deg);
  }
 
+ .imageAccueil {
+     object-fit: cover;
+     background-color: lightgray;
+ }
+
 
   /******************************************** Partie body de la page details *******************************************/
 
@@ -83,7 +94,9 @@
   left: 57px;
   z-index:1;
 }
-
+.postionTitreRealisation{
+    z-index:102;
+}
 /******************************************** Partie body de la page Contact *******************************************/
 .CarteDeLocolisation{
     height: 430px;
@@ -98,6 +111,10 @@
     @include media-breakpoint-up(md) {
         display: inline;
     }
+}
+
+.alertMessageEnvoye{
+  background: #d1e7dd;
 }
 
 
@@ -253,7 +270,7 @@
         padding-right: 19px;
      }
      .descTraitementSpecialise{
-        padding-left: 65px;
+        padding-left: 45px;
      }
 }
 

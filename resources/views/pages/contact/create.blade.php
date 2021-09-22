@@ -22,9 +22,8 @@ Contact
 </div>
 <!-- bande iframme-->
 <div class="mb-5 CarteDeLocolisation">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.385586506546!2d5.521277916102491!3d50.61995347949915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f977156b26fd%3A0x390eb45dae1a540c!2sRue%20de%20l&#39;Industrie%2039%2C%204420%20Saint-Nicolas!5e0!3m2!1sfr!2sbe!4v1618050548429!5m2!1sfr!2sbe"
-        class="w-100 h-100 " style="border:0;" allowfullscreen="" loading="lazy">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.9334811780004!2d5.594978115929157!3d50.66549557972712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f0868be22635%3A0xf0d9265a0954676d!2sLavaniste-Voie%20213%2C%204041%20Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1628365455718!5m2!1sfr!2sbe"
+      class="w-100 h-100 imageAccueil " style="border:0;" allowfullscreen="" loading="lazy">
     </iframe>
 </div>
 
@@ -96,9 +95,8 @@ Contact
                                     <path
                                         d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                                 </svg>
-                                <a href="https://goo.gl/maps/yfGXmZWc29B3GsjT8 " target="_blank" class="text-decoration-none text-ColorPrivBlue LinkHover"> Rue de
-                                    l'industrie 39
-                                    4420 Saint-Nicolas</a>
+                                <a href="https://goo.gl/maps/SEoQdkxSzn1BNRGZ9" target="_blank" class="text-decoration-none text-ColorPrivBlue LinkHover">
+                                  Rue Lavaniste - Voie 213/B, 4000 Liège</a>
                             </li>
                         </ul>
                     </div>

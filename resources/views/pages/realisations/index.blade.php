@@ -29,17 +29,20 @@ Nos-Réalisations
 </div> --}}
 <div class="row">
     @foreach ($realisations as $item)
-    <div class="col-sm-6 col-lg-4 p-0">
-        <div class="card shadow-lg position-relative ">
-            <h5 class="card-title position-absolute top-0 start-3 text-white fw-bold h3 p-2 text-capitalize">
-                {{ $item->titre }}</h5>
-            <a href="" class="fw-bold text-capitalize fs-4 text-decoration-none " title="plus infos"
-                data-bs-toggle="modal" data-bs-target="#detailsRealisation-{{ $item->id }}">
-                <img src="{{ asset($item->image) }}" class="card-img-top" alt="image des realisations" width="236px"
-                    height="236px">
-            </a>
-        </div>
-        <div class="modal fade" id="detailsRealisation-{{ $item->id }}" data-bs-backdrop="static" aria-hidden="true" tabindex="-1" >
+    <div class="col-sm-6 col-lg-4 p-0 position-relative">
+        <a href="" class=" h-100 actionFiltreDark text-capitalize fs-4 text-decoration-none d-block" title="plus infos"
+            data-bs-toggle="modal" data-bs-target="#detailsRealisation-{{ $item->id }}">
+            <div class="filtreDark"></div>
+            <div class="card shadow-lg ">
+                <h5 class="position-absolute top-0 start-3 text-white fw-bold h3 p-2 text-capitalize postionTitreRealisation">
+                    {{ $item->titre }}</h5>
+
+                <img src="{{ $item->image1 }}" class="w-100 " alt="image des realisations" height="300">
+
+            </div>
+        </a>
+        <div class="modal fade" id="detailsRealisation-{{ $item->id }}" data-bs-backdrop="static" aria-hidden="true"
+            tabindex="-1">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <!-- Header -->
@@ -54,18 +57,14 @@ Nos-Réalisations
                     <!-- Body -->
                     <div class="modal-body">
                         <div class="d-flex">
-                              <img src="{{ asset($item->image) }}" alt="orthoplastie" class="w-50 d-inline mx-1">
-                        <img src="{{ $item->image1 }}" alt="orthoplastie" class="w-50 d-inline">
+                            <img src="{{ asset($item->image) }}" alt="orthoplastie" class="w-50 d-inline mx-1">
+                            <img src="{{ $item->image1 }}" alt="orthoplastie" class="w-50 d-inline">
                         </div>
 
                         <h5 class="modal-title fw-bold fs-4 my-1">{{ $item->titre }}</h5>
 
                         <div class="my-2 text-start">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                            accusamus autem iure nihil placeat rerum nulla quasi sint, eius, pariatur, earum
-                            omnis libero reiciendis ratione tempore impedit. Facere, repellat fugiat.Lorem ipsum,
-                            dolor sit amet consectetur adipisicing elit. Itaque accusamus autem
-                            iure nihil placeat rerum nulla quasi sint, eius, pariatur, earum
+                            {!! $item->description !!}
                         </div>
                     </div>
                     <!-- Footer -->

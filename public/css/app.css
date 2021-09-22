@@ -11127,14 +11127,15 @@ body {
   font-family: "sketchflow";
 }
 
-.imageAccueil {
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-color: lightgray;
-}
-
-.alertMessageEnvoye {
-  background: #d1e7dd;
+.actionFiltreDark:hover .filtreDark {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 100;
 }
 
 /******************************************** Partie body de la page d'accueil *******************************************/
@@ -11171,6 +11172,12 @@ body {
   transform: rotate(-12deg);
 }
 
+.imageAccueil {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: lightgray;
+}
+
 /******************************************** Partie body de la page details *******************************************/
 .ColorGrayPriv {
   background-color: #F7F7F7;
@@ -11190,6 +11197,10 @@ body {
   z-index: 1;
 }
 
+.postionTitreRealisation {
+  z-index: 102;
+}
+
 /******************************************** Partie body de la page Contact *******************************************/
 .CarteDeLocolisation {
   height: 430px;
@@ -11206,6 +11217,10 @@ body {
   .coordoneeContact {
     display: inline;
   }
+}
+
+.alertMessageEnvoye {
+  background: #d1e7dd;
 }
 
 /******************************************** Partie body de la page Autre de services *******************************************/
@@ -11351,7 +11366,7 @@ body {
   }
 
   .descTraitementSpecialise {
-    padding-left: 65px;
+    padding-left: 45px;
   }
 }
 .CardSoins {

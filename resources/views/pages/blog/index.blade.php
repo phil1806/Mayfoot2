@@ -22,14 +22,14 @@ Blog
           @if($i==0)
           <?php $i++ ?>
         <div class="offset-md-1 col-md-10">
-            <div class="card shadow-lg my-2">
+            <div class="card shadow-lg my-2 rounded-3">
                 <div class="row">
                     <div class="col-12 col-lg-8">
-                        <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news">
+                        <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news" height= "500">
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card-body h-100">
-                            <div class="card-title fw-bold h1 text-capitalize">{!! $new->titre!!}</div>
+                            <div class="card-title fw-bold h2 text-capitalize">{!! $new->titre!!}</div>
                             <div class="my-1 colorBlue">Date de publication : <span
                                     class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                             </div>
@@ -47,11 +47,11 @@ Blog
          @elseif($i==1)
          <?php $i++?>
         <div class="offset-md-1 col-md-10">
-            <div class="card shadow-lg my-2">
+            <div class="card shadow-lg my-2 rounded-3">
                 <div class="row">
                     <div class="col-12 col-lg-4 order-2 order-lg-1">
                         <div class="card-body h-100">
-                            <div class="card-title fw-bold h1 text-capitalize">{{ $new->titre }}</div>
+                            <div class="card-title fw-bold h2 text-capitalize">{{ $new->titre }}</div>
                             <div class="my-1 colorBlue">Date de publication : <span
                                     class="fw-bold colorDark">{{\Carbon\Carbon::parse($new->created_at)->format('d-m-Y') }}</span>
                             </div>
@@ -64,17 +64,17 @@ Blog
                         </div>
                     </div>
                     <div class="col-12 col-lg-8 order-1 order-lg-2">
-                       <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news">
+                       <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news" height="450">
                     </div>
                 </div>
             </div>
         </div>
         @else
         <div class="offset-md-1 col-md-10">
-            <div class="card shadow-lg my-2">
+            <div class="card shadow-lg my-2 rounded-3">
                 <div class="row">
                     <div class="col-12 col-lg-8">
-                        <img src=" {{ asset($new->image) }}" class="card-img w-100" alt="image news">
+                        <img src=" {{ asset($new->image) }}" class="card-img w-100 " alt="image news" height="450">
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card-body h-100">

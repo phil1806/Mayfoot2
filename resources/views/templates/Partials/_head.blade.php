@@ -20,5 +20,6 @@
      <!-- link public -->
      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
      <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+     <script async src='https://stackwhats.com/pixel/3a040501a61d8648f9820e28d13c5c'></script> 
      <title>MayFoot - @yield('title')</title>
  </head>

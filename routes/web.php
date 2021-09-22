@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\newsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\realisationsController;
@@ -88,6 +89,21 @@ Route::get('/realisation',[realisationsController::class, 'index'])->name('reali
 */
 Route::get('contact',[ContactController::class, 'create'])->name('page.contact');
 Route::post('contact',[ContactController::class, 'store']);
+
+
+//  ROUTES CACHE  ------------------------------------------------------------
+/*
+  DESC: PERMET DE  VIDER LA CACHE
+  PATTERN: /clear-cache
+  CTRL:
+  ACTION: vide la cache en ligne
+*/
+Route::get('/clear-cache', function() {
+        $run = Artisan::call('config:clear');
+        $run = Artisan::call('cache:clear');
+        $run = Artisan::call('config:cache');
+        return 'FINISHED';
+});
 
 
 
